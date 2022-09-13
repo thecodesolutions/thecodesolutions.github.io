@@ -1,0 +1,743 @@
+﻿<html>
+<head>
+    <title>Code Solutions</title>
+    <!-- META DATA -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- CSS Implementing Plugins -->
+    <!--<link rel="stylesheet" href="assets/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="assets/css/ensx.min.css">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=1">
+    <!--<link rel="stylesheet" href="assets/css/custom.css">-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500,600,700" rel="stylesheet" type="text/css">
+    
+</head>
+<body class="start">
+    <div id="awd-site-wrap" class="bg bg-home">
+        <div id="bg">
+            <div id="overlay">
+                <div class="awd-site-bg bg-home"></div>
+                <div class="awd-site-bg bg-about"></div>
+                <div class="awd-site-bg bg-services"></div>
+                <div class="awd-site-bg bg-careers"></div>
+                <div class="awd-site-bg bg-contact"></div>
+            </div>
+            <canvas hidden id="awd-site-canvas"></canvas>
+        </div>
+        <!-- START SITE HEADER -->
+        <header id="header-overlay">
+            <div id="awd-site-header">
+                <div id="awd-site-logo" class="animated logo-responsive fadeInDown visible" data-animation="fadeInDown" data-animation-delay="500">
+                    <span onclick="ga('send', 'event', 'Navigation', 'Logo', 'click to Logo');" class="awd-site-nav"><a href="#" onclick="showSlider()" data-slide="home" class="active logo-ensx"><img src="assets/img/ensx-logo-1.svg" height="100%"></a></span>
+                </div>
+                <button class="menu-toggle animated fadeInDown visible" data-animation="fadeInDown" data-animation-delay="500" data-role="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- START NAVIGATION -->
+                <nav id="awd-site-nav" class="navigation animated awd-site-nav fadeInDown visible" data-animation="fadeInDown" data-animation-delay="500">
+                    <div class="nav-container">
+                        <!-- START NAVIGATION MENU ITEMS -->
+                        <ul>
+                            <li onclick="ga('send', 'event', 'Navigation', 'Products', 'click to Products');"><a data-scroll href="#" onclick="hideSlider()" data-slide="products">Products</a></li>
+                            <li onclick="ga('send', 'event', 'Navigation', 'Services', 'click to Services');"><a data-scroll href="#" onclick="hideSlider()" data-slide="services">Services</a></li>
+                            <li onclick="ga('send', 'event', 'Navigation', 'Careers', 'click to Careers');"><a data-scroll href="#" onclick="hideSlider()" data-slide="careers">Careers</a></li>
+                            <li onclick="ga('send', 'event', 'Navigation', 'About', 'click to About');"><a data-scroll href="#" onclick="hideSlider()" data-slide="about">About</a></li>
+                            <li onclick="ga('send', 'event', 'Navigation', 'Contact', 'click to Contact');"><a data-scroll href="#" onclick="hideSlider()" data-slide="contact">Contact</a></li>
+                        </ul>
+                        <!-- END NAVIGATION MENU ITEMS -->
+                    </div>
+                </nav>
+                <!-- END NAVIGATION -->
+            </div>
+        </header>
+        <!-- END SITE HEADER -->
+        <!-- START MAIN -->
+        <main id="awd-site-main">
+            <!-- START SECTION -->
+            <section id="awd-site-content">
+                <div class="sections-block ps-container" data-ps-id="f260cf40-53c4-cc95-2251-6863b82b064e">
+                    <div class="slides">
+                        <div class="slides-wrap">
+                            <!-- HOME SECTION -->
+                            <div class="slide-item" data-slide-id="home">
+                                <div class="sliderx active" id="sliderx">
+                                    <div class="slide_navi_dots">
+                                        <div onclick="changeSlider('one')" id="dot_one" class="active"></div>
+                                        <div onclick="changeSlider('two')" id="dot_two"></div>
+                                        <div onclick="changeSlider('three')" id="dot_three"></div>
+                                        <div onclick="changeSlider('four')" id="dot_four"></div>
+                                    </div>
+                                    <div id="sliderx_one" class="sliderx_item active"></div>
+                                    <div id="sliderx_two" class="sliderx_item"></div>
+                                    <div id="sliderx_three" class="sliderx_item"></div>
+                                    <div id="sliderx_four" class="sliderx_item"></div>
+                                </div>
+                                <!-- START CONTAINER -->
+                                <div class="container-fluid-1">
+                                    <div class="row-home">
+                                        <div class="col-md-12">
+                                            <!-- START SLIDE CONTENT-->
+                                            <div class="slide-content">
+                                                <div class="row-home">
+                                                    <div class="col-lg-6 col-md-6 svm"></div>
+                                                    <!-- SLIDER TEXT CONTENT-->
+                                                    <div>
+                                                        <!-- SLIDER ONE-->
+                                                        <div class="col-lg-5 col-lg-offset-1 col-md-6 svm sliderx_txt active" id="sliderx_txt_one">
+                                                            <div class="section-info animated fadeIn visible col-lg-offset-1 briskly" data-animation="fadeIn" data-animation-delay="60">
+                                                                <div class="briskly-logo-web">
+                                                                    <img src="assets/img/Briskly-Logo-Web.png" />
+                                                                </div>
+                                                                <div class="app-logo-app">
+                                                                    <img src="assets/img/Briskly-Logo-App.png" />
+                                                                </div>
+                                                                <h4>Join Briskly and become part of an exclusive platform where you can snag last minute deals on leftover & extra inventory, overstock, services, empty seats, and save a few bucks</h4>
+                                                            </div>
+                                                            <div style="margin-bottom:15px;">
+                                                                <a id="ios-download-btn" href="https://itunes.apple.com/us/app/briskly/id1292153146?mt=89?mt=8" target="_blank" onclick="ga('send', 'event', 'Download', 'ios-Download', 'Downloaded ios app');">
+                                                                    <img src="assets/img/App-Store.png" alt="ios-store-button" class="img-store-button">
+                                                                </a>
+                                                                <a id="android-download-btn" href="https://play.google.com/store/apps/details?id=com.skinnyshrimp.pub&hl=en" target="_blank" onclick="ga('send', 'event', 'Download', 'Android-Download', 'Downloaded android app');">
+                                                                    <img src="assets/img/Google-Store.png" alt="android-store-image" class="img-store-button">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- SLIDER TWO-->
+
+                                                        <div class="col-lg-5 col-lg-offset-1 col-md-6 svm sliderx_txt" id="sliderx_txt_two">
+                                                            <div class="section-info animated fadeIn visible col-lg-offset-1 AMe" data-animation="fadeIn" data-animation-delay="60">
+                                                                <div class="AMe-logo-web">
+                                                                    <img src="assets/img/AMe-Logo-Web.png" />
+                                                                </div>
+                                                                <div class="app-logo-app">
+                                                                    <img src="assets/img/AMe-Logo-App.png" />
+                                                                </div>
+                                                                <h4 class="font-color:fff;">ApproachMe is the easiest and simplest way for you to find each other in crowds and track where everybody is, in real-time, while you're trying to meet up</h4>
+                                                            </div>
+                                                            <div style="margin-bottom:15px;">
+                                                                <a id="ios-download-btn" href="https://itunes.apple.com/us/app/approachme-locate-friends-meet-up-in-real-time/id930075065?mt=8" target="_blank" onclick="ga('send', 'event', 'Download', 'ios-Download', 'Downloaded ios app');">
+                                                                    <img src="assets/img/App-Store.png" alt="ios-store-button" class="img-store-button">
+                                                                </a>
+                                                                <a id="android-download-btn" href="https://play.google.com/store/apps/details?id=com.approachme.approachme&hl=en" target="_blank" onclick="ga('send', 'event', 'Download', 'Android-Download', 'Downloaded android app');">
+                                                                    <img src="assets/img/Google-Store.png" alt="android-store-image" class="img-store-button">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <!-- SLIDER THREE-->
+                                                        <div class="col-lg-5 col-lg-offset-1 col-md-6 svm sliderx_txt" id="sliderx_txt_three">
+                                                            <div class="section-info animated fadeIn visible col-lg-offset-1 TX" data-animation="fadeIn" data-animation-delay="60">
+                                                                <div class="TX-logo-web">
+                                                                    <img src="assets/img/TX-Logo-Web.png" />
+                                                                </div>
+                                                                <div class="app-logo-app">
+                                                                    <img src="assets/img/TX-Logo-App.png" />
+                                                                </div>
+                                                                <h4>Use with TrackerX® GPS Tracking devices for easy setup and tracking. Simply install the app, scan your TrackerX® GPS device Bar Code, and select your own personalized PIN. That is it! You’re now ready to track your GPS device</h4>
+                                                            </div>
+                                                            <div style="margin-bottom:15px;">
+                                                                <a id="ios-download-btn" href="https://itunes.apple.com/us/app/trackerx/id1146572879?mt=8" target="_blank" onclick="ga('send', 'event', 'Download', 'ios-Download', 'Downloaded ios app');">
+                                                                    <img src="assets/img/App-Store.png" alt="ios-store-button" class="img-store-button">
+                                                                </a>
+                                                                <a id="android-download-btn" href="https://play.google.com/store/apps/details?id=com.trackerx.me" target="_blank" onclick="ga('send', 'event', 'Download', 'Android-Download', 'Downloaded android app');">
+                                                                    <img src="assets/img/Google-Store.png" alt="android-store-image" class="img-store-button">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- SLIDER FOUR-->
+
+                                                        <div class="col-lg-5 col-lg-offset-1 col-md-6 svm sliderx_txt" id="sliderx_txt_four">
+                                                            <div class="section-info animated fadeIn visible col-lg-offset-1 PX" data-animation="fadeIn" data-animation-delay="60">
+                                                                <div class="PointX-logo-web">
+                                                                    <img src="assets/img/PointX-Logo-Web.png" />
+                                                                </div>
+                                                                <div class="app-logo-app">
+                                                                    <img src="assets/img/PointX-Logo-App.png" />
+                                                                </div>
+                                                                <h4>Travel app to help you save a place worth remembering and revisiting, even if there is no map to that location or cell service available. You can also share the place with others to find it just as easily</h4>
+                                                            </div>
+                                                            <div style="margin-bottom:15px;">
+                                                                <a id="ios-download-btn" href="https://itunes.apple.com/us/app/pointx/id978738082?mt=8" target="_blank" onclick="ga('send', 'event', 'Download', 'ios-Download', 'Downloaded ios app');">
+                                                                    <img src="assets/img/App-Store.png" alt="ios-store-button" class="img-store-button">
+                                                                </a>
+                                                                <a id="android-download-btn" href="https://play.google.com/store/apps/details?id=com.approachme.pointx&hl=en" target="_blank" onclick="ga('send', 'event', 'Download', 'Android-Download', 'Downloaded android app');">
+                                                                    <img src="assets/img/Google-Store.png" alt="android-store-image" class="img-store-button">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- END SLIDE CONTENT-->
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- END CONTAINER -->
+                            </div>
+
+                            <!-- PRODUCTS SECTION -->
+                            <div class="slide-item" data-slide-id="products">
+                                <!-- START CONTAINER -->
+                                <div class="container-fluid">
+                                    <div class="row-home animated" data-animation="fadeIn" data-animation-delay="120">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12 svm" style="margin-top: 0px;margin-bottom: 0;">
+                                                    <h1 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="120">Products</h1>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 svm">
+                                                    <a href="http://approachme.net/?page_id=212" target="_blank">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <img src="assets/img/ame-web-ui-app-approachme-1.png" class="media-object app-icon">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">APPROACHME®</h4>
+                                                                <p>Locate Friends and Meet Up in Real-time! ™</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 svm">
+                                                    <a href="http://approachme.net/?page_id=183" target="_blank">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <img src="assets/img/ame-web-ui-app-pointx-1.png" class="media-object app-icon">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">POINTX®</h4>
+                                                                <p>Travel app to help you save a place worth remembering and revisiting, even if there is no map to that location or cell service available.  You can also share the place with others to find it just as easily.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 svm">
+                                                    <a href="https://briskly.com/?page_id=166" target="_blank">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <img src="assets/img/ame-web-ui-app-briskly-2.png" class="media-object app-icon">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">BRISKLY™</h4>
+                                                                <p>The future to Buy on-demand is few weeks away!</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 svm">
+                                                    <a href="http://approachme.net/?page_id=166" target="_blank">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <img src="assets/img/ame-web-ui-app-lighthouse-1.png" class="media-object app-icon">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">LIGHTHOUSE-X®</h4>
+                                                                <p>Platform to broadcast location based offers and directories to recipients within selected geo-fence and time-distance from a business.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 svm">
+                                                    <a href="http://approachme.net/?page_id=183" target="_blank">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <img src="assets/img/px-logo.png" class="media-object app-icon">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">POINTX®  PRO</h4>
+                                                                <p>Travel app to help you save a place worth remembering and revisiting, even if there is no map to that location or cell service available.  You can also share the place with others to find it just as easily.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 svm">
+                                                    <a href="https://briskly.com/?page_id=79" target="_blank">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <img src="assets/img/ame-web-ui-app-briskly-3.png" class="media-object app-icon">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">BRISKLY™ BUSINESS</h4>
+                                                                <p>The future to Sell on-demand is few weeks away!</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 svm">
+                                                    <a href="http://approachme.net/?page_id=192" target="_blank">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <img src="assets/img/ame-web-ui-app-trackerx-1.png" class="media-object app-icon">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">TRACKERX®</h4>
+                                                                <p>GPS vehicle tracking devices for real-time tracking without monthly fees or contracts.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 svm">
+
+                                                </div>
+                                                <div class="col-md-4 svm">
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 svm" style="margin-top: 30px;margin-bottom: 0;">
+                                                    <h3 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="120" style="margin-bottom: 0;">Others</h3>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 svm other-app">
+                                                    <div class="media">
+                                                        <div class="media">
+                                                            <img src="assets/img/ame-web-ui-app-directoryx-1.png" class="media-object app-icon-other">
+                                                            <div class="app-store-name">
+                                                                <span class="media-heading">asdfasdf</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media">
+                                                            <img src="assets/img/ame-web-ui-app-gethere-1.png" class="media-object app-icon-other">
+                                                            <div class="app-store-name">
+                                                                <span class="media-heading">asdasd</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media">
+                                                            <img src="assets/img/ame-web-ui-app-txchat-1.png" class="media-object app-icon-other">
+                                                            <div class="app-store-name">
+                                                                <span class="media-heading">asdasd</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media">
+                                                            <img src="assets/img/ame-web-ui-app-taxiz-1.png" class="media-object app-icon-other">
+                                                            <div class="app-store-name">
+                                                                <span class="media-heading">q3redas</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media">
+                                                            <img src="assets/img/ame-web-ui-app-rio-1.png" class="media-object app-icon-other">
+                                                            <div class="app-store-name">
+                                                                <span class="media-heading">sfwefsf</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media">
+                                                            <img src="assets/img/ame-web-ui-app-eopen-1.png" class="media-object app-icon-other">
+                                                            <div class="app-store-name">
+                                                                <span class="media-heading">sgfgdfgd</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media">
+                                                            <img src="assets/img/ame-web-ui-app-kytketty-1.png" class="media-object app-icon-other">
+                                                            <div class="app-store-name">
+                                                                <span class="media-heading">123123e</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media">
+                                                            <img src="assets/img/ame-web-ui-app-approachable-1.png" class="media-object app-icon-other">
+                                                            <div class="app-store-name">
+                                                                <span class="media-heading">dfsdfsdf</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTAINER -->
+                            </div>
+                            <!-- ABOUT SECTION -->
+                            <div class="slide-item" data-slide-id="about">
+                                <!-- START CONTAINER -->
+                                <div class="container-fluid">
+                                    <div class="row-home">
+                                        <div class="col-md-12">
+                                            <div>
+                                                <div class="col-md-5 svm" style="float: left;">
+                                                    <table>
+                                                        <tr class="section-info text-left">
+                                                            <!-- START TITLE -->
+                                                            <td class="icon-h-txt">
+                                                                <h1 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="120">Who We Are</h1>
+                                                                <!-- END TITLE -->
+                                                                <h5 id="amLink" class="animated" data-animation="fadeIn" data-animation-delay="180" style="line-height: 1.6;">
+                                                                    Being a subsidiary of Code Solutions Hybrid Technologies, we make the spot light follow us just as our parent company.
+                                                                    For us, who we are is a secondary matter. How we differ from our competitors is the real meat of the matter here.
+                                                                    Our Unique Selling Point is to facilitate our worldwide clients with the state of the art technologies, specific to their location.
+                                                                    So, localize the requested products and services with a dramatize impact make us, what we actually are today.
+                                                                    Our fully equipped and massively talented development team put the pedal to the metal in order to turn all your requirements into tangible reality.
+                                                                    <br><br>
+                                                                    Versatility that is known to meet and exceed the client requirements, empowers Code Solutions as an excellent technology service provider.
+                                                                    We offer an impeccable set of services ranging from software to all types of application development.
+                                                                    Other dimension of our service is to propel alliances giving mutual benefits, with all our partner companies.
+                                                                    Our customer service agents go well beyond their call of duty with every attention to help our clients with all their queries and concerns relating directly or indirectly to all the products and services that we already have provided to them.
+                                                                    Not only this, but, we also ensure that our customer services extent well beyond the deployment of the product or service and facilitate our clients in every possible manner including installation of products/ services, their troubleshooting or any form of remote or possibly on-site training required.
+                                                                    <br><br>
+                                                                    Visit: <a href="http://approachme.net/" target="_blank">www.am.ht</a>
+
+                                                                </h5>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="col-md-5 col-lg-offset-1 svm" style="float: left;">
+                                                    <div class="section-info text-left">
+                                                        <!-- START TITLE -->
+                                                        <h2 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="60">Our Mission.</h2>
+                                                        <!-- END TITLE -->
+                                                        <h5 style="margin-bottom: 10px;" class="animated" data-animation="fadeIn" data-animation-delay="180">
+                                                            Our mission is loosely defined as to ‘Tech it Up’, wherever there is a client requirement that wants us to go the extra mile to get things done and in the right order.
+                                                            Some of the salient features of our mission are given below:
+                                                        </h5>
+                                                        <ul class="animated bullet-list" data-animation="fadeIn" data-animation-delay="120">
+                                                            <li>For us, a quality product is not just defined by meeting the software industry standards, but, a significant chunk goes to the customer requirements satisfaction. This is the top priority that we as a team devotedly strives for.</li>
+                                                            <li>Under promise, over deliver – This is our philosophy when it comes to delivering our products, services and solutions well within the promised deadlines committed with all our prestigious clients. Nothing can surprise the client more than to have a quality delivery shipped well within the given deadline, or at worst, just by the committed deadline. This part of our mission is earning great accolade from all our clients worldwide for such an approach.</li>
+                                                            <li>To understand the ever-evolving nature of technology and that reminds us of our duty to keep ourselves up-to-date with the latest advancement in the field. For that matter, we have imposed quality checks everywhere in our processes lifecycle which not only finds any quality loopholes but also rectifies them within quick turnaround time.</li>
+                                                            <li>To understand the client requirements and the importance of having their products and services delivered within the deadline. We believe in establishing long-term working relationship and this prompts us to live by the expectations and commitments made with all our esteemed clients.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTAINER -->
+                            </div>
+
+                            <!-- SERVICES SECTION -->
+                            <div class="slide-item" data-slide-id="services">
+                                <!-- START CONTAINER -->
+                                <div class="container-fluid">
+                                    <div class="row-home">
+                                        <div class="col-md-12">
+                                            <div>
+                                                <div class="col-md-5 svm" style="float: left;">
+                                                    <table>
+                                                        <tr class="section-info text-left">
+                                                            <!-- START TITLE -->
+                                                            <td class="icon-h-txt">
+                                                                <h1 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="120">Services</h1>
+                                                                <!-- END TITLE -->
+                                                                <h5 class="animated" data-animation="fadeIn" data-animation-delay="180" style="margin-bottom: 10px;line-height: 1.4;">
+                                                                    There is absolutely no secret about the empowerment, ability and the art of producing quality and client-specific work through the Code Solutions podium.
+                                                                    Our portfolio, repeated clients and the ever-growing fraternity of trusted customers are a true reflection of that. We take huge pride in that and why not.
+                                                                    Our core services range from Embedded Solutions, Apps Development, Location Based Solutions and Customized Solutions as well.
+                                                                    We believe in providing solutions which are custom-made to suit the needs of your business and help in taking your venture to the next level with all the technology enabled solutions.
+                                                                    Another critical aspect of our services is to add reliability and spruce it up for performance. The output of our solutions is further endorsed by inducing them with 3 ‘Rs’ and those are Responsive, Robust and Reliable.
+                                                                    Not to forget the user friendly characteristic which eventually completes the nexus of what a fully loaded and ready to ship software product should have.
+                                                                    All these key features and characteristics makes an integral appearance in the development phase in order to make the product with maximum usability and that too, without breaking your bank.
+                                                                </h5>
+                                                                <h5 class="animated" data-animation="fadeIn" data-animation-delay="180">
+                                                                    Our services on a high level, revolves around the following 3 critical solutions:
+                                                                </h5>
+                                                                <ol style="margin-left: 10px;" class="animated" data-animation="fadeIn" data-animation-delay="180">
+                                                                    <li><span style="font-weight: 600;">1. Location Based Solutions-</span> Getting all the location specific information through the GPS technology of your smart device in order to attract the potential clients in the vicinity.</li>
+                                                                    <li><span style="font-weight: 600;">2. Apps Development–</span> This is the need of the hour, to have a mobile app that further exhibits your business to a larger number of prospective clients turning into real clients. We deliver all kinds of mobile apps solution either from scratch or innovating an existing one while incorporating latest technologies.</li>
+                                                                    <li><span style="font-weight: 600;">3. Embedded Solutions– </span>This service provides your business with a dedicated functionality in order to accomplish a particular task, with increased reliability and performance of your system.</li>
+                                                                </ol>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="col-md-5 col-lg-offset-1 svm" style="float: left;">
+                                                    <div class="section-info text-left">
+                                                        <!-- START TITLE -->
+                                                        <h2 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="120">Revolutionizing your Business through Innovative Technologies:</h2>
+                                                        <!-- END TITLE -->
+                                                        <h5 class="animated bullet-list" data-animation="fadeIn" data-animation-delay="180">
+                                                            We bring to our customers only those products and services which are exactly as per the latest technology trends being incorporated worldwide.
+                                                            We understand the ever-evolving nature of technology with new things coming every now and then and this is where our developers keeps themselves and our podium up to date with the latest technologies.
+                                                            Try it to believe it and we are sure that you will never find us short of any technological advancement which hasn’t made its way into our technology arsenal.
+                                                            We have confidence in serving our clients throughout the globe with impeccable technology-enriched services given 24/7/365.
+                                                        </h5>
+                                                        <br><br><br><br>
+                                                        <div class="animated" data-animation="fadeIn" data-animation-delay="60">
+
+                                                            <p>
+                                                                Currently, we provide the following solutions:
+                                                            </p>
+                                                        </div>
+                                                        <div class="animated" data-animation="fadeIn" data-animation-delay="60">
+                                                            <table class="table-col-center-align" border="0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="feature-ico"><img src="assets/img/ensx-icon-desktop-test-1.svg" style="height:100%; text-align: center;"></th>
+                                                                        <th class="feature-ico"><img src="assets/img/ensx-icon-web-test-1.svg" style="height:100%; text-align: center;"></th>
+                                                                        <th class="feature-ico"><img src="assets/img/ensx-icon-app-test-1.svg" style="height:100%; text-align: center;"></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr style="text-align: center;">
+                                                                        <td width="30%"><h3>Location<br>based<br>Solutions</h3></td>
+                                                                        <td width="30%"><h3>Apps<br>Development</h3></td>
+                                                                        <td width="30%"><h3>Embedded<br>Solutions</h3></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTAINER -->
+                            </div>
+
+                            <!-- CAREERS SECTION -->
+                            <div class="slide-item" data-slide-id="careers">
+                                <!-- START CONTAINER -->
+                                <div class="container-fluid">
+                                    <div class="row-home">
+                                        <div class="col-md-12">
+                                            <div>
+                                                <div class="col-md-5 svm" style="float: left;">
+
+                                                    <table>
+                                                        <tr class="section-info text-left">
+                                                            <!--<td class="icon-h animated" data-animation="fadeIn" data-animation-delay="60"><img src="assets/img/ensx-icon-ba-1.svg" width="100%" height="100%"></td>-->
+                                                            <!-- START TITLE -->
+                                                            <td class="icon-h-txt">
+                                                                <h1 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="120">Careers</h1>
+                                                                <!-- END TITLE -->
+                                                                <!-- <h4 class="animated" data-animation="fadeIn" data-animation-delay="180">
+                                                                    The Code Solutions is a global software company headquartered in California, with offices in Silicon Valley and Pakistan.
+                                                                </h4> -->
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    <div class="section-info text-left animated" data-animation="fadeIn" data-animation-delay="240">
+                                                        <!-- START TITLE -->
+                                                        <p>
+                                                            A position in our company ensures that you connect well with your career goals just where you left from your last organization.
+                                                            We believe not only in taking your career to the next level but also to give you the perfect work-life balance.
+                                                            No matter, wherever you stand in your career path in terms of experience, we surely can consider all those individuals who are motivated, deadline oriented, technically strong and have a vision which can propel both the personal and organizational goals in tandem.
+                                                            If you are the one with these skills then we are the right employer for you.
+                                                            The following are some key attributes that we seek in our prospective and current employees and also what we have got to offer them in return:
+                                                        </p>
+                                                        <div class="animated" data-animation="fadeIn" data-animation-delay="120" style="margin-left: 10px;margin-top: -10px;">
+                                                            <ul class="animated bullet-list">
+                                                                <li><span style="font-weight: 600;">Work yourself, being yourself– </span>That is our mantra of success, which has paid off well over the years. Code Solutions proudly vouch for diversity in all its hiring. </li>
+                                                                <li><span style="font-weight: 600;">Work locally, think globally– </span>This is our philosophy where individuals do make a difference when analyzed things on a bigger canvas. Working for global clients wants us to go well beyond our call of duty in order to serve our clients in the most desirable manner. </li>
+                                                                <li><span style="font-weight: 600;">Love your work– </span>Work should never be done as a matter of duty, but to do something that you enjoy. This is the attitude that we are looking for as that benefits both the organization and you as an individual with lots of creativity and productivity to come. </li>
+                                                                <li><span style="font-weight: 600;">Mapping your future– </span>You better know who you are and how to shape your career progressively. It all about knowing about your strengths and weaknesses. On our side, we provide career counselling in order to help you reach your goals, while working for our organization.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="col-md-5 col-lg-offset-1 svm" style="float: left;">
+                                                    <div class="section-info text-left animated" data-animation="fadeIn" data-animation-delay="60">
+                                                        <!-- START TITLE -->
+                                                        <!-- <h3 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="60"></h3> -->
+                                                        <!-- END TITLE -->
+                                                        <img src="assets/img/team-banner.png" class="career-team-banner">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTAINER -->
+                            </div>
+
+                            <!-- CONTACT SECTION -->
+                            <div class="slide-item" data-slide-id="contact">
+                                <!-- START CONTAINER -->
+                                <div class="container-fluid">
+                                    <div class="row-home">
+                                        <div class="col-md-12">
+                                            <div class="col-md-5 svm">
+                                                <table>
+                                                    <tr class="section-info text-left">
+                                                        <!--<td class="icon-h animated" data-animation="fadeIn" data-animation-delay="60"><img src="assets/img/ensx-icon-interact-1.svg" width="100%" height="100%"></td>-->
+                                                        <!-- START TITLE -->
+                                                        <td class="icon-h-txt">
+                                                            <h1 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="120">Contact</h1>
+                                                            <!-- END TITLE -->
+                                                            <!-- <p>Please upload your CV.</p> -->
+                                                            <!-- <div id="image-cover" class="image-cover"> -->
+                                                                <!-- <label>Select File<input type="file" name="uploadCv" id="file-upload" title=" ">  </label> -->
+
+                                                            <!-- </div> -->
+
+                                                            <!-- <span id="file-name"> -->
+
+                                                            <!-- </span>  -->
+                                                            <!-- <button style="border-radius: 5px 5px 5px 5px !important;margin-top: 11px !important;margin: 0 auto;" class="btn" type="button" id="btnUpload" name="btnUpload"> -->
+                                                                <!-- <span>Send</span> -->
+                                                            <!-- </button> -->
+                                                            <div class="interact-info animated" data-animation="fadeIn" data-animation-delay="180">
+                                                                <h2>Code Solutions (Private) Limited</h2>
+                                                                <!-- <p> -->
+                                                                    <!-- Office# 1-B First Floor,<br> -->
+                                                                    <!-- Mid City Mall, Murree Road<br> -->
+                                                                    <!-- Rawalpindi, Pakistan<br> -->
+                                                                    <!-- info@enabling.systems -->
+                                                                <!-- </p> -->
+                                                                <h2>Code Solutions, Inc.</h2>
+                                                                <!-- <p> -->
+                                                                    <!-- 1680 Civic Center Drive,<br> -->
+                                                                    <!-- Suite 220 Santa Clara,<br> -->
+                                                                    <!-- CA 95050 USA<br> -->
+                                                                    <!-- info@approachme.net -->
+                                                                <!-- </p> -->
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="col-md-5 svm">
+                                                <div class="text-left" style="padding: 20px 0;">
+                                                    <!-- START interact FORM -->
+                                                    <form id="interact-form" class="interact-form">
+                                                        <div class="col-lg-4 col-md-6 animated fadeIn visible" style="width:100%;" data-animation="fadeIn" data-animation-delay="200">
+                                                            <p>If you have a general enquiry, send us a message and we will get back to you as soon as possible. Please fill in as much information as possible to enable us to give.</p>
+                                                        </div>
+                                                        <div>
+
+                                                            <div class="col-lg-4 col-md-6 col-md-12 animated fadeIn visible" data-animation="fadeIn" data-animation-delay="200">
+                                                                <input name="interact-name" placeholder="Name" class="interact-form-name required" id="name" type="text">
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 col-md-12 animated fadeIn visible" data-animation="fadeIn" data-animation-delay="200">
+                                                                <input name="interact-email" placeholder="Email address" class="interact-form-email required" id="email" type="email">
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-12 animated fadeIn visible" data-animation="fadeIn" data-animation-delay="200">
+                                                                <input name="interact-subject" placeholder="Subject" class="interact-form-subject required" type="text">
+                                                            </div>
+                                                            <!-- END COLUMN 4 -->
+                                                            <div class="col-lg-4 col-md-12 animated fadeIn visible" data-animation="fadeIn" data-animation-delay="150" style="width:100%;">
+                                                                <textarea name="interact-message" placeholder="Message" class="interact-form-message required" id="message" row-homes="4"></textarea>
+                                                                <button style="border-radius: 0 0 4px 4px !important;" class="btn btn-block" type="submit" id="Button" name="submit">
+                                                                    <span>Send Message</span>
+                                                                    <i class="fa fa-send"></i>
+                                                                </button>
+                                                            </div>
+                                                            <!-- END COLUMN 8 -->
+                                                        </div>
+                                                        <div class="interact-notice fadeIn" style="text-align: center;"></div>
+                                                    </form>
+                                                    <!-- END interact FORM -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTAINER -->
+                            </div>
+                        </div>
+                    </div>
+                    <footer id="awd-site-footer">
+                        <!-- START COPYRIGHT -->
+                        <div class="copyright animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="500">
+                            Copyright © 2022 Code Solutions (Private) Limited.
+                        </div>
+                        <!-- END COPYRIGHT -->
+                        <!-- START SOCIAL ICONS -->
+                        <nav class="social-icons animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="500">
+                            <ul>
+                                <li><a href="#" target="_blank"><img src="assets/img/ensx-icon-fb-1.svg" height="25"></a></li>
+                                <li><a href="#" target="_blank"><img src="assets/img/ensx-icon-twt-1.svg" height="25"></a></li>
+                                <li><a href="#" target="_blank"><img src="assets/img/ensx-icon-linkedin-1.svg" height="25"></a></li>
+                            </ul>
+                        </nav>
+                        <!-- END SOCIAL ICONS -->
+                    </footer>
+                    <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div>
+                    <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px;"><div class="ps-scrollbar-y" style="top: 0px; height: 153px;"></div></div>
+                </div>
+            </section>
+            <!-- END SECTION -->
+        </main>
+        <!-- END MAIN -->
+
+
+    </div>
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/sliderx.js?v=1"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+
+    <script type="text/javascript" src="https://www.eopen.com/assets/js/jquery.ui.widget.js"></script>
+    <script src="https://www.eopen.com/assets/js/jquery.iframe-transport.js" async defer></script>
+    <script type="text/javascript" src="https://www.eopen.com/assets/js/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="https://www.eopen.com/assets/js/jquery.fileupload-ui.js"></script>
+    <script src="assets/js/fileUpload.js"></script>
+
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor.js"></script>
+    <script type="text/javascript" src="assets/js/options.js"></script>
+    <script type="text/javascript" src="assets/js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="assets/js/contact_me.js"></script>
+    <script type="text/javascript" src="assets/js/main.js?v=1"></script>
+    <script src="assets/js/smooth-scroll-master/dist/js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var slider = 3;
+            setInterval(function () {
+                if (slider == 1) { changeSlider("one") }
+                if (slider == 2) { changeSlider("two") }
+                if (slider == 3) { changeSlider("three") }
+                if (slider == 4) { changeSlider("four"); slider = 0; }
+                slider++;
+            }, 5000)
+
+
+            var scroll = new SmoothScroll('.js-scroll, [data-scroll], #about, #services ,#careers ,#contact');
+
+        })
+    </script>
+     
+</body>
+</html>
